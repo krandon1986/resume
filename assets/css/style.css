@@ -373,3 +373,8 @@ button[type="submit"] {
         max-width: 50%;
     } 
 }
+
+/* ---map --- */
+#map {
+    min-height: 360px;
+}
