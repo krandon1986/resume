@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css"  type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("LJ79uAt7eEDSTtzfY");
+        })();
+    </script>
+
     <title>Rosie</title>
 </head>
 <body>
@@ -57,7 +64,7 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" 
                             required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" 
@@ -138,5 +145,6 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/39af327d44.js" crossorigin="anonymous"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
